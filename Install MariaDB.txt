@@ -1,13 +1,13 @@
 # Circular-Replication
 How to Install MariaDB 5.5 on Ubuntu
-Step #1: Add the MariaDB Repository
+##Step #1: Add the MariaDB Repository##
 
   sudo apt-get install software-properties-common
   sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db
   sudo add-apt-repository 'deb http://mirror.jmu.edu/pub/mariadb/repo/5.5/ubuntu trusty main'
   sudo apt-get update
   
-Step #2: Install MariaDB
+##Step #2: Install MariaDB##
   sudo apt-get install mariadb-server
                           ###README###
     ---After this operation, 116 MB of additional disk space will be used.---
@@ -16,7 +16,7 @@ Step #2: Install MariaDB
     --------------------------------------------------------------------------
     sudo service mysql stop
     
-  Step 3: Configure and Secure MariaDB for Use
+  ##Step 3: Configure and Secure MariaDB for Use##
     sudo mysql_install_db
     sudo service mysql start
     sudo mysql_secure_installation
@@ -35,7 +35,7 @@ Step #2: Install MariaDB
             -  Reload privilege tables now? [Y/n] Y                                                                              -
             ----------------------------------------------------------------------------------------------------------------------
             
-  Step 4: Verify MariaDB Installation
+  ##Step 4: Verify MariaDB Installation##
     You can check the version of the MariaDB installation with the following command:
       mysql -V
     Enter the MariaDB command client:
